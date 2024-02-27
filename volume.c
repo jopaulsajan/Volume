@@ -40,9 +40,7 @@ int main(int argc, char *argv[])
     fwrite(header, 1, 44, output);
 
     // Read samples from input file and write updated data to output file
-    // ...
-
-    // Read samples from input file and write updated data to output file
+    
     if (fseek(input, 0, SEEK_END) != 0)
     {
         perror("Error seeking to end of file");
