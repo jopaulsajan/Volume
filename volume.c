@@ -33,16 +33,16 @@ int main(int argc, char *argv[])
 
     float factor = atof(argv[3]);
 
-    // TODO: Copy header from input file to output file
+    // Copy header from input file to output file
 
     uint8_t header[45];
     fread(header, 1, 44, input);
     fwrite(header, 1, 44, output);
 
-    // TODO: Read samples from input file and write updated data to output file
+    // Read samples from input file and write updated data to output file
     // ...
 
-    // TODO: Read samples from input file and write updated data to output file
+    // Read samples from input file and write updated data to output file
     if (fseek(input, 0, SEEK_END) != 0)
     {
         perror("Error seeking to end of file");
